@@ -1,0 +1,5 @@
+# Custom Files/Folders
+temp/
+.ftpsync_settings
+*.css.map
+*.sketch
