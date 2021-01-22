@@ -313,7 +313,12 @@ let controller = (function(budgetCtrl, UICtrl) {
     let DOM = UICtrl.getDOMStrings();
     document.querySelector(DOM.inputBtn).addEventListener('click', ctrlAddItem);
     document.addEventListener('keypress', function(event) {
-      if (event.keyCode === 13 || event.which === 13 || event.charCode === 13) {
+      /*var cCode = event.which || event.charCode;
+      if (event.key === 'Enter' || cCode=== 13 || cCode === 13) {
+        ctrlAddItem();
+      }*/
+
+      if (event.key === 'Enter') {
         ctrlAddItem();
       }
     });
